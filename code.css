@@ -1,0 +1,171 @@
+/* code.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+}
+.Title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Title h1 {
+    font-size: 2.5rem;
+    color: #1a73e8; /* Blue title color */
+}
+
+.introduction {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.introduction h2 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666; /* Dark gray italic text */
+}
+
+.Overview {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.Overview h2 {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.how-to-play, .some-fun-fact-ab-wb {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.how-to-play h1, .some-fun-fact-ab-wb h1 {
+    font-size: 1.5rem;
+    color: #1a73e8; /* Blue heading color */
+}
+
+.how-to-play h2, .some-fun-fact-ab-wb h2 {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.some-fun-fact-ab-wb {
+    margin-top: 40px; /* Larger margin top for the second section */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.if {
+    text-align: center;
+    margin-top: 20px;
+}
+.additional-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* This ensures spacing between items */
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.additional-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1a73e8; /* Blue background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.additional-button:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+}
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pokemon {
+    flex: 1 1 23%; /* Adjust the width as needed */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 5px;
+}
+
+.pokemon h1 {
+    font-size: 2rem;
+    color: #1a73e8; /* Blue title color */
+    margin-bottom: 10px;
+}
+
+.pokemon-info h2 {
+    font-size: 1.3rem;
+    color: #1a73e8; /* Blue heading color */
+    margin-bottom: 5px;
+}
+
+.pokemon-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.pokemon-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.boss-info {
+    background-color: lightblue;
+    flex-basis: calc(50% - 50px); /* Adjusts for margin; adjust the 10px as needed */
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align the items for aesthetics */
+    margin-bottom: 15px; /* Space between rows */
+    border-left: 15px ridge green; 
+    border-bottom: 15px groove green;
+    border-top: 15px ridge green;
+    border-right: 15px groove green;
+  }
+  
+  .boss-info img {
+    width: 100%; /* Adjust based on your preference */
+    height: auto; /* Maintain aspect ratio */
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  h2 img {
+    margin-right: 10px; /* Adjust space between image and text */
+    width: 50px; /* Adjust based on your preference */
+    height: auto; /* Maintain aspect ratio */
+  }
+    .boss-info h2 {
+        font-size: 1.5rem;
+        color: #1a73e8; /* Blue heading color */
+        margin: 10px 0;
+    }
+    @media (max-width: 768px) {
+        .boss-info {
+            flex-basis: 100%; /* Each boss takes full width on smaller screens */
+        }
+    
+        .pokemon-note {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two notes per line */
+            gap: 10px; /* Adjust gap between notes */
+        }
+    }
